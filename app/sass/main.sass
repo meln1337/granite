@@ -38,6 +38,13 @@ body
 b, strong
 	font-weight: bold
 
+.preloader
+	position: absolute
+	width: 100%
+	height: 100vh
+	background-color: #fff
+	z-index: 100
+
 header
 	height: 100px
 	.container
@@ -83,6 +90,111 @@ header
 		padding: 0 20px
 		cursor: pointer
 
+section.nav
+	.col-md-12
+		background: #ffcc00
+		nav
+			width: inherit
+			ul
+				list-style: none
+				margin-bottom: 0
+				padding-left: 0
+				li
+					padding: 20px 0
+					a
+						font-size: 14px
+						font-family: gotham-pro-bold
+						color: #000
+						text-decoration: none
 
+section.fast__delivery
+	background: url('../img/Слой 10.png') center top
+	background-repeat: no-repeat
+	background-size: cover
+	margin-top: -33px
+	height: 550px
+	h1
+		font-size: 36px
+		font-family: gotham-pro-bold
+		color: #fff
+		text-transform: uppercase
+		padding-top: 150px
+	p
+		font-size: 14px
+		font-family: gotham-pro-light
+		color: #fff
+		margin-top: 42px
+	.more__of__delivery
+		margin-top: 65px
+		button
+			background: #ffd200
+			border: none
+			outline: none
+			font-size: 12px
+			font-family: gotham-pro-bold
+			color: #0d0d0d
+			padding: 20px 30px
+			cursor: pointer
+		.else
+			color: #fff
+			margin-left: 30px
+			font-family: gotham-pro-light
+		.catalog
+			color: #fff
+			margin-left: 30px
+			font-family: gotham-pro
+	
+body
+	width: 100%
+	height: 100vh
+	background-color: #fff
+
+#logo
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	animation: fill 2.1s ease forwards 3.5s
+	transition: ease-out 1s
+
+#logo path:nth-child(1)
+	stroke-dasharray: 635.7127075195312
+	stroke-dashoffset: 635.7127075195312
+	animation: line-anim 3s ease forwards 0.6s
+
+#logo path:nth-child(2)
+	stroke-dasharray: 549.06689453125
+	stroke-dashoffset: 549.06689453125
+	animation: line-anim 3s ease forwards 0.9s
+
+#logo path:nth-child(3)
+	stroke-dasharray: 490.29217529296875
+	stroke-dashoffset: 490.29217529296875
+	animation: line-anim 3s ease forwards 1.2s
+
+#logo path:nth-child(4)
+	stroke-dasharray: 604.4830322265625
+	stroke-dashoffset: 604.4830322265625
+	animation: line-anim 3s ease forwards 1.5s
+
+#logo path:nth-child(5)
+	stroke-dasharray: 226.9440460205078
+	stroke-dashoffset: 226.9440460205078
+	animation: line-anim 3s ease forwards 1.8s
+
+#logo path:nth-child(6)
+	stroke-dasharray: 336.6719970703125
+	stroke-dashoffset: 336.6719970703125
+	animation: line-anim 3s ease forwards 2.1s
+
+@keyframes line-anim
+	to
+		stroke-dashoffset: 0
+
+@keyframes fill
+	from
+		fill: transparent 
+	to
+		fill: #FFCC00
 
 @import "media" // Always at the end
