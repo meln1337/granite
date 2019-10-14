@@ -1,5 +1,4 @@
-window.onload = function () {
-	if ($('#logo').css("fill") == 'rgb(255, 204, 0)') {
-		console.log("sdfsfd")
-	}
-}
+$('.menu-btn').on('click', function(e) {
+    e.preventDefault;
+    $(this).toggleClass('menu-btn_active');
+  });
