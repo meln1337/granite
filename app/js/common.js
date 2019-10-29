@@ -5,7 +5,7 @@ $('.mobile-menu').on('click', function (e) {
     a = 1;
     e.preventDefault();
     $('.menu-btn').toggleClass('menu-active');
-    $('.nav').css('opacity', 1)
+    $('.nav').css('opacity', 1);
     $('body').css('height', '100vh');
     $('body').css('position', 'fixed');
   } else {
